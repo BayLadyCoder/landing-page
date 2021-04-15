@@ -1,12 +1,12 @@
 import React from "react";
-import Nav from "./components/NavBar/";
+import NavBar from "./components/NavBar/";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-      <h1>Hello World!</h1>
-    </div>
+    <Router>
+      <NavBar />
+    </Router>
   );
 }
 

@@ -1,10 +1,15 @@
 import React from "react";
-import { Nav, NavBarContainer } from "./NavBar.styled";
+import { Nav, NavBarContainer, NavLogo, NavIcon } from "./NavBar.styled";
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
   return (
     <Nav>
-      <NavBarContainer>Test</NavBarContainer>
+      <NavBarContainer>
+        <NavLogo to="/">
+          <NavIcon />
+          ULTRA
+        </NavLogo>
+      </NavBarContainer>
     </Nav>
   );
 };
