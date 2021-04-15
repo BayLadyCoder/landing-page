@@ -5,6 +5,9 @@ import {
   NavLogo,
   NavIcon,
   MobileIcon,
+  NavMenu,
+  NavItem,
+  NavLink,
 } from "./NavBar.styled";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
@@ -26,6 +29,17 @@ const NavBar: React.FC = () => {
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
+            <NavMenu onClick={handleClick} click={click}>
+              <NavItem>
+                <NavLink to="/">Home</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to="/services">Services</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to="/products">Products</NavLink>
+              </NavItem>
+            </NavMenu>
           </NavBarContainer>
         </Nav>
       </IconContext.Provider>
