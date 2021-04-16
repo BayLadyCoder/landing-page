@@ -14,7 +14,7 @@ export const InfoSec = styled.div<InfoSecProps>`
 `;
 
 interface InfoRowProps {
-  imgStart: boolean;
+  imgStart: string;
 }
 export const InfoRow = styled.div<InfoRowProps>`
   display: flex;
@@ -48,4 +48,36 @@ export const TextWrapper = styled.div`
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
   }
+`;
+
+interface TopLineProps {
+  lightTopLine: boolean;
+}
+export const TopLine = styled.div<TopLineProps>`
+  color: ${({ lightTopLine }) => (lightTopLine ? "#a9b3c1" : "#4b559f")};
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 1.4px;
+  margin-bottom: 16px;
+`;
+
+interface HeadingProps {
+  lightText: boolean;
+}
+export const Heading = styled.h1<HeadingProps>`
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 1.1;
+  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#1c2237")};
+`;
+
+interface SubtitleProps {
+  lightTextDesc: boolean;
+}
+export const Subtitle = styled.p<SubtitleProps>`
+  max-width: 440px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 24px;
+  color: ${({ lightTextDesc }) => (lightTextDesc ? "#a9b3c1" : "#1c2237")};
 `;
