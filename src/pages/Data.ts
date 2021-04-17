@@ -10,4 +10,7 @@ export const homeObjOne = {
   lightTopLine: true,
   lightText: true,
   lightTextDesc: true,
+  img: require("../images/professor.svg").default,
+  alt: "Image",
+  start: "",
 };

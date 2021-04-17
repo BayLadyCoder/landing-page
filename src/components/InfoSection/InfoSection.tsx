@@ -7,6 +7,8 @@ import {
   TopLine,
   Heading,
   Subtitle,
+  ImgWrapper,
+  Img,
 } from "./InfoSection.styled";
 import { Container, Button } from "../../globalStyles";
 import { Link } from "react-router-dom";
@@ -22,6 +24,9 @@ interface Props {
   lightTopLine: boolean;
   lightText: boolean;
   lightTextDesc: boolean;
+  img: string;
+  alt: string;
+  start: string;
 }
 
 const InfoSection: React.FC<Props> = ({
@@ -35,6 +40,9 @@ const InfoSection: React.FC<Props> = ({
   lightTopLine,
   lightText,
   lightTextDesc,
+  img,
+  alt,
+  start,
 }) => {
   return (
     <>
@@ -52,6 +60,11 @@ const InfoSection: React.FC<Props> = ({
                   </Button>
                 </Link>
               </TextWrapper>
+            </InfoColumn>
+            <InfoColumn>
+              <ImgWrapper start={start}>
+                <Img src={img} alt={alt} />
+              </ImgWrapper>
             </InfoColumn>
           </InfoRow>
         </Container>
