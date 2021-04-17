@@ -1,7 +1,7 @@
 export const homeObjOne = {
   primary: true,
   lightBg: false,
-  imgStart: "",
+  imgStart: false,
   topLine: "marketing Agency",
   headline: "Lead Generation Specialist for Online Business",
   description:
@@ -12,13 +12,12 @@ export const homeObjOne = {
   lightTextDesc: true,
   img: require("../images/professor.svg").default,
   alt: "Image",
-  start: "",
 };
 
 export const homeObjTwo = {
   primary: false,
   lightBg: true,
-  imgStart: "start",
+  imgStart: true,
   topLine: "marketing Agency",
   headline: "Lead Generation Specialist for Online Business",
   description:
@@ -30,13 +29,12 @@ export const homeObjTwo = {
   img:
     "https://images0.westend61.de/0000727540pw/portrait-of-confident-businesswoman-in-office-CHAF001779.jpg",
   alt: "Image",
-  start: "true",
 };
 
 export const homeObjThree = {
   primary: true,
   lightBg: false,
-  imgStart: "",
+  imgStart: false,
   topLine: "marketing Agency",
   headline: "Lead Generation Specialist for Online Business",
   description:
@@ -47,12 +45,11 @@ export const homeObjThree = {
   lightTextDesc: true,
   img: require("../images/hiring.svg").default,
   alt: "Image",
-  start: "",
 };
 export const homeObjFour = {
   primary: false,
   lightBg: true,
-  imgStart: "start",
+  imgStart: true,
   topLine: "marketing Agency",
   headline: "Lead Generation Specialist for Online Business",
   description:
@@ -63,5 +60,4 @@ export const homeObjFour = {
   lightTextDesc: false,
   img: require("../images/investing.svg").default,
   alt: "Image",
-  start: "true",
 };

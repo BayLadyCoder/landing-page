@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 interface Props {
   primary: boolean;
   lightBg: boolean;
-  imgStart: string;
+  imgStart: boolean;
   topLine: string;
   headline: string;
   description: string;
@@ -26,7 +26,6 @@ interface Props {
   lightTextDesc: boolean;
   img: string;
   alt: string;
-  start: string;
 }
 
 const InfoSection: React.FC<Props> = ({
@@ -42,7 +41,6 @@ const InfoSection: React.FC<Props> = ({
   lightTextDesc,
   img,
   alt,
-  start,
 }) => {
   return (
     <>
@@ -62,7 +60,7 @@ const InfoSection: React.FC<Props> = ({
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>
-              <ImgWrapper start={start}>
+              <ImgWrapper imgStart={imgStart}>
                 <Img src={img} alt={alt} />
               </ImgWrapper>
             </InfoColumn>

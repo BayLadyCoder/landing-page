@@ -14,7 +14,7 @@ export const InfoSec = styled.div<InfoSecProps>`
 `;
 
 interface InfoRowProps {
-  imgStart: string;
+  imgStart: boolean;
 }
 export const InfoRow = styled.div<InfoRowProps>`
   display: flex;
@@ -82,10 +82,10 @@ export const Subtitle = styled.p<SubtitleProps>`
   color: ${({ lightTextDesc }) => (lightTextDesc ? "#a9b3c1" : "#1c2237")};
 `;
 
-export const ImgWrapper = styled.div<{ start: string }>`
+export const ImgWrapper = styled.div<{ imgStart: boolean }>`
   max-width: 555px;
   display: flex;
-  justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")};
+  justify-content: ${({ imgStart }) => (imgStart ? "flex-start" : "flex-end")};
 `;
 
 export const Img = styled.img`
