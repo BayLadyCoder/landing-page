@@ -1,7 +1,7 @@
-export const homeObjOne = {
+export const homeSectionOne = {
   primary: true,
   imgStart: false,
-  topLine: "marketing Agency",
+  topLine: "Marketing Agency",
   headline: "Lead Generation Specialist for Online Business",
   description:
     "We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.",
@@ -10,10 +10,10 @@ export const homeObjOne = {
   alt: "Image",
 };
 
-export const homeObjTwo = {
+export const homeSectionTwo = {
   primary: false,
   imgStart: true,
-  topLine: "marketing Agency",
+  topLine: "Marketing Agency",
   headline: "Lead Generation Specialist for Online Business",
   description:
     "We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.",
@@ -23,10 +23,10 @@ export const homeObjTwo = {
   alt: "Image",
 };
 
-export const homeObjThree = {
+export const homeSectionThree = {
   primary: true,
   imgStart: false,
-  topLine: "marketing Agency",
+  topLine: "Marketing Agency",
   headline: "Lead Generation Specialist for Online Business",
   description:
     "We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.",
@@ -34,10 +34,10 @@ export const homeObjThree = {
   img: require("../images/hiring.svg").default,
   alt: "Image",
 };
-export const homeObjFour = {
+export const homeSectionFour = {
   primary: false,
   imgStart: true,
-  topLine: "marketing Agency",
+  topLine: "Marketing Agency",
   headline: "Lead Generation Specialist for Online Business",
   description:
     "We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.",
