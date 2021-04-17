@@ -1,22 +1,19 @@
 import styled from "styled-components";
-import { Container } from "../../globalStyles";
-import { FaMagento } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
-interface InfoSecProps {
-  lightBg: boolean;
+interface PrimaryProp {
+  primary: boolean;
 }
-
-export const InfoSec = styled.div<InfoSecProps>`
-  color: #fff;
-  padding: 160px 0;
-  background: ${({ lightBg }) => (lightBg ? "#fff" : "#101522")};
-`;
-
-interface InfoRowProps {
+interface ImgStartProp {
   imgStart: boolean;
 }
-export const InfoRow = styled.div<InfoRowProps>`
+
+export const InfoSec = styled.div<PrimaryProp>`
+  color: #fff;
+  padding: 160px 0;
+  background: ${({ primary }) => (primary ? "#101522" : "#fff")};
+`;
+
+export const InfoRow = styled.div<ImgStartProp>`
   display: flex;
   margin: 0 -15px -15px -15px;
   flex-wrap: wrap;
@@ -50,39 +47,30 @@ export const TextWrapper = styled.div`
   }
 `;
 
-interface TopLineProps {
-  lightTopLine: boolean;
-}
-export const TopLine = styled.div<TopLineProps>`
-  color: ${({ lightTopLine }) => (lightTopLine ? "#a9b3c1" : "#4b559f")};
+export const TopLine = styled.div<PrimaryProp>`
+  color: ${({ primary }) => (primary ? "#a9b3c1" : "#4b559f")};
   font-size: 18px;
   line-height: 16px;
   letter-spacing: 1.4px;
   margin-bottom: 16px;
 `;
 
-interface HeadingProps {
-  lightText: boolean;
-}
-export const Heading = styled.h1<HeadingProps>`
+export const Heading = styled.h1<PrimaryProp>`
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#1c2237")};
+  color: ${({ primary }) => (primary ? "#f7f8fa" : "#1c2237")};
 `;
 
-interface SubtitleProps {
-  lightTextDesc: boolean;
-}
-export const Subtitle = styled.p<SubtitleProps>`
+export const Subtitle = styled.p<PrimaryProp>`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? "#a9b3c1" : "#1c2237")};
+  color: ${({ primary }) => (primary ? "#a9b3c1" : "#1c2237")};
 `;
 
-export const ImgWrapper = styled.div<{ imgStart: boolean }>`
+export const ImgWrapper = styled.div<ImgStartProp>`
   max-width: 555px;
   display: flex;
   justify-content: ${({ imgStart }) => (imgStart ? "flex-start" : "flex-end")};

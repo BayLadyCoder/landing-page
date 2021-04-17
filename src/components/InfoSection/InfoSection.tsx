@@ -15,43 +15,35 @@ import { Link } from "react-router-dom";
 
 interface Props {
   primary: boolean;
-  lightBg: boolean;
   imgStart: boolean;
   topLine: string;
   headline: string;
   description: string;
   buttonLabel: string;
-  lightTopLine: boolean;
-  lightText: boolean;
-  lightTextDesc: boolean;
   img: string;
   alt: string;
 }
 
 const InfoSection: React.FC<Props> = ({
   primary,
-  lightBg,
   imgStart,
   topLine,
   headline,
   description,
   buttonLabel,
-  lightTopLine,
-  lightText,
-  lightTextDesc,
   img,
   alt,
 }) => {
   return (
     <>
-      <InfoSec lightBg={lightBg}>
+      <InfoSec primary={primary}>
         <Container>
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
               <TextWrapper>
-                <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
+                <TopLine primary={primary}>{topLine}</TopLine>
+                <Heading primary={primary}>{headline}</Heading>
+                <Subtitle primary={primary}>{description}</Subtitle>
                 <Link to="/sign-up">
                   <Button big fontBig primary={primary}>
                     {buttonLabel}
