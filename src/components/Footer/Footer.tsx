@@ -11,8 +11,21 @@ import {
   FooterLinksItems,
   FooterLinkTitle,
   FooterLink,
+  SocialMedia,
+  SocialMediaWrap,
+  SocialLogo,
+  WebsiteRights,
+  SocialIcons,
+  SocialIconLink,
+  SocialIcon,
 } from "./Footer.styled";
-
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa";
 import { Button } from "../../globalStyles";
 
 const Footer = () => {
@@ -64,6 +77,36 @@ const Footer = () => {
           </FooterLinksItems>
         </FooterLinksWrapper>
       </FooterLinksContainer>
+      <SocialMedia>
+        <SocialMediaWrap>
+          <SocialLogo to="/">
+            <SocialIcon /> ULTRA
+          </SocialLogo>
+          <WebsiteRights>ULTRA © 2021</WebsiteRights>
+          <SocialIcons>
+            <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+              <FaFacebook />
+            </SocialIconLink>
+            <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+              <FaInstagram />
+            </SocialIconLink>
+            <SocialIconLink
+              href="https://www.youtube.com/"
+              target="_blank"
+              aria-label="Youtube"
+              rel="noopener"
+            >
+              <FaYoutube />
+            </SocialIconLink>
+            <SocialIconLink href="/" target="_blank" aria-label="Twitter">
+              <FaTwitter />
+            </SocialIconLink>
+            <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
+              <FaLinkedin />
+            </SocialIconLink>
+          </SocialIcons>
+        </SocialMediaWrap>
+      </SocialMedia>
     </FooterContainer>
   );
 };
