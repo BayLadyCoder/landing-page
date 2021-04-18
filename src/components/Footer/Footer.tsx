@@ -6,11 +6,6 @@ import {
   FooterSubText,
   Form,
   FormInput,
-  FooterLinksContainer,
-  FooterLinksWrapper,
-  FooterLinksItems,
-  FooterLinkTitle,
-  FooterLink,
   SocialMedia,
   SocialMediaWrap,
   SocialLogo,
@@ -19,6 +14,7 @@ import {
   SocialIconLink,
   SocialIcon,
 } from "./Footer.styled";
+import SiteMap from "./SiteMap";
 import {
   FaFacebook,
   FaInstagram,
@@ -28,7 +24,7 @@ import {
 } from "react-icons/fa";
 import { Button } from "../../globalStyles";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <FooterContainer>
       <FooterSubscription>
@@ -41,42 +37,7 @@ const Footer = () => {
           <Button fontBig>Subscribe</Button>
         </Form>
       </FooterSubscription>
-      <FooterLinksContainer>
-        <FooterLinksWrapper>
-          <FooterLinksItems>
-            <FooterLinkTitle>About Us</FooterLinkTitle>
-            <FooterLink to="/sign-up">How it works</FooterLink>
-            <FooterLink to="/">Testimonials</FooterLink>
-            <FooterLink to="/">Careers</FooterLink>
-            <FooterLink to="/">Investors</FooterLink>
-            <FooterLink to="/">Terms of Service</FooterLink>
-          </FooterLinksItems>
-          <FooterLinksItems>
-            <FooterLinkTitle>Contact Us</FooterLinkTitle>
-            <FooterLink to="/sign-up">How it works</FooterLink>
-            <FooterLink to="/">Testimonials</FooterLink>
-            <FooterLink to="/">Careers</FooterLink>
-            <FooterLink to="/">Investors</FooterLink>
-            <FooterLink to="/">Terms of Service</FooterLink>
-          </FooterLinksItems>
-          <FooterLinksItems>
-            <FooterLinkTitle>Videos</FooterLinkTitle>
-            <FooterLink to="/sign-up">How it works</FooterLink>
-            <FooterLink to="/">Testimonials</FooterLink>
-            <FooterLink to="/">Careers</FooterLink>
-            <FooterLink to="/">Investors</FooterLink>
-            <FooterLink to="/">Terms of Service</FooterLink>
-          </FooterLinksItems>
-          <FooterLinksItems>
-            <FooterLinkTitle>Social Media</FooterLinkTitle>
-            <FooterLink to="/sign-up">How it works</FooterLink>
-            <FooterLink to="/">Testimonials</FooterLink>
-            <FooterLink to="/">Careers</FooterLink>
-            <FooterLink to="/">Investors</FooterLink>
-            <FooterLink to="/">Terms of Service</FooterLink>
-          </FooterLinksItems>
-        </FooterLinksWrapper>
-      </FooterLinksContainer>
+      <SiteMap />
       <SocialMedia>
         <SocialMediaWrap>
           <SocialLogo to="/">
