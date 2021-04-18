@@ -1,11 +1,6 @@
 import React from "react";
 import {
   FooterContainer,
-  FooterSubscription,
-  FooterSubHeading,
-  FooterSubText,
-  Form,
-  FormInput,
   SocialMedia,
   SocialMediaWrap,
   SocialLogo,
@@ -15,6 +10,7 @@ import {
   SocialIcon,
 } from "./Footer.styled";
 import SiteMap from "./SiteMap";
+import Subscription from "./Subscription";
 import {
   FaFacebook,
   FaInstagram,
@@ -22,21 +18,11 @@ import {
   FaLinkedin,
   FaYoutube,
 } from "react-icons/fa";
-import { Button } from "../../globalStyles";
 
 const Footer: React.FC = () => {
   return (
     <FooterContainer>
-      <FooterSubscription>
-        <FooterSubHeading>
-          Join our exclusive membership to receive the latest news and trends
-        </FooterSubHeading>
-        <FooterSubText>You can unsubscribe at any time</FooterSubText>
-        <Form>
-          <FormInput name="email" type="email" placeholder="Your Email" />
-          <Button fontBig>Subscribe</Button>
-        </Form>
-      </FooterSubscription>
+      <Subscription />
       <SiteMap />
       <SocialMedia>
         <SocialMediaWrap>
