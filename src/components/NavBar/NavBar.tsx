@@ -20,6 +20,9 @@ const NavBar: React.FC = () => {
   const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
+
+  const closeMobileMenu = () => setClick(false);
+
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
@@ -39,7 +42,7 @@ const NavBar: React.FC = () => {
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
           <NavBarContainer>
-            <NavLogo to="/">
+            <NavLogo to="/" onClick={closeMobileMenu}>
               <NavIcon />
               ULTRA
             </NavLogo>

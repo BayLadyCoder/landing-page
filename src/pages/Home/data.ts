@@ -1,4 +1,4 @@
-export const homeSectionOne = {
+export const sectionOne = {
   primary: true,
   imgStart: false,
   topLine: "Marketing Agency",
@@ -6,11 +6,11 @@ export const homeSectionOne = {
   description:
     "We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.",
   buttonLabel: "Get Started",
-  img: require("../images/professor.svg").default,
+  img: require("../../images/professor.svg").default,
   alt: "Image",
 };
 
-export const homeSectionTwo = {
+export const sectionTwo = {
   primary: false,
   imgStart: true,
   topLine: "Marketing Agency",
@@ -23,7 +23,7 @@ export const homeSectionTwo = {
   alt: "Image",
 };
 
-export const homeSectionThree = {
+export const sectionThree = {
   primary: true,
   imgStart: false,
   topLine: "Marketing Agency",
@@ -31,10 +31,10 @@ export const homeSectionThree = {
   description:
     "We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.",
   buttonLabel: "Get Started",
-  img: require("../images/hiring.svg").default,
+  img: require("../../images/hiring.svg").default,
   alt: "Image",
 };
-export const homeSectionFour = {
+export const sectionFour = {
   primary: false,
   imgStart: true,
   topLine: "Marketing Agency",
@@ -42,6 +42,6 @@ export const homeSectionFour = {
   description:
     "We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.",
   buttonLabel: "Get Started",
-  img: require("../images/investing.svg").default,
+  img: require("../../images/investing.svg").default,
   alt: "Image",
 };
