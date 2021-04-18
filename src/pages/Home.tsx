@@ -4,7 +4,8 @@ import {
   homeSectionTwo,
   homeSectionThree,
   homeSectionFour,
-} from "./Data";
+} from "./data";
+import Pricing from "../components/Pricing";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <InfoSection {...homeSectionOne} />
       <InfoSection {...homeSectionTwo} />
       <InfoSection {...homeSectionThree} />
+      <Pricing />
       <InfoSection {...homeSectionFour} />
     </>
   );
