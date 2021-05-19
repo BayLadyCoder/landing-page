@@ -1,6 +1,6 @@
 {
   "homepage": "https://bayladycoder.github.io/landing-page/",
-  "name": "landing-page-styled-components",
+  "name": "landing-page",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
