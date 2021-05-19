@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/landing-page/static/js/main.7c8b54d3.chunk.js",
-    "main.js.map": "/landing-page/static/js/main.7c8b54d3.chunk.js.map",
-    "runtime-main.js": "/landing-page/static/js/runtime-main.1539844b.js",
-    "runtime-main.js.map": "/landing-page/static/js/runtime-main.1539844b.js.map",
-    "static/js/2.7e8856c3.chunk.js": "/landing-page/static/js/2.7e8856c3.chunk.js",
-    "static/js/2.7e8856c3.chunk.js.map": "/landing-page/static/js/2.7e8856c3.chunk.js.map",
+    "main.js": "/landing-page/static/js/main.8a5c9184.chunk.js",
+    "main.js.map": "/landing-page/static/js/main.8a5c9184.chunk.js.map",
+    "runtime-main.js": "/landing-page/static/js/runtime-main.e4e48422.js",
+    "runtime-main.js.map": "/landing-page/static/js/runtime-main.e4e48422.js.map",
+    "static/js/2.2433cf07.chunk.js": "/landing-page/static/js/2.2433cf07.chunk.js",
+    "static/js/2.2433cf07.chunk.js.map": "/landing-page/static/js/2.2433cf07.chunk.js.map",
     "index.html": "/landing-page/index.html",
-    "static/js/2.7e8856c3.chunk.js.LICENSE.txt": "/landing-page/static/js/2.7e8856c3.chunk.js.LICENSE.txt",
+    "static/js/2.2433cf07.chunk.js.LICENSE.txt": "/landing-page/static/js/2.2433cf07.chunk.js.LICENSE.txt",
     "static/media/collab.svg": "/landing-page/static/media/collab.c2340ae3.svg",
     "static/media/connected.svg": "/landing-page/static/media/connected.3e8f7f44.svg",
     "static/media/connected_world.svg": "/landing-page/static/media/connected_world.5687e287.svg",
@@ -16,8 +16,8 @@
     "static/media/professor.svg": "/landing-page/static/media/professor.aa6e6f43.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1539844b.js",
-    "static/js/2.7e8856c3.chunk.js",
-    "static/js/main.7c8b54d3.chunk.js"
+    "static/js/runtime-main.e4e48422.js",
+    "static/js/2.2433cf07.chunk.js",
+    "static/js/main.8a5c9184.chunk.js"
   ]
 }
